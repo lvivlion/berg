@@ -1,0 +1,13 @@
+# Berg Dental - Pittsburgh Clear Aligner Center
+# Sitemap: https://bergdentaldmd.com/sitemap.xml
+
+User-agent: *
+Allow: /
+
+# Disallow admin or temporary files
+Disallow: /components/
+Disallow: /temp_index.html
+Disallow: /team_section.html
+
+# Sitemap location
+Sitemap: https://bergdentaldmd.com/sitemap.xml

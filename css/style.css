@@ -373,6 +373,71 @@ h3 {
   margin-bottom: 12px;
 }
 
+/* Mission Section - Two Column Layout */
+.mission-section {
+  padding: 80px 0;
+  background-color: #f8fbff;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.mission-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.mission-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  font-family: var(--font-heading);
+}
+
+.mission-subtitle {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.mission-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.mission-text p:last-child {
+  margin-bottom: 0;
+}
+
+.mission-text strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* SERVICES GRID - Mimicking Screenshot */
 .services-section {
   padding-bottom: 100px;
@@ -392,12 +457,14 @@ h3 {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  /* Lift effect */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow on hover */
 }
 
 .service-card img {
@@ -418,7 +485,7 @@ h3 {
   right: 0;
   bottom: 0;
   background: transparent;
-  /* No overlay by default */
+  /* No overlay by default - clean images */
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -429,19 +496,18 @@ h3 {
 
 .service-card:hover .service-overlay {
   background: linear-gradient(135deg, rgba(29, 175, 237, 0.92) 0%, rgba(13, 155, 217, 0.88) 100%);
+  /* Blue overlay appears on hover */
 }
 
 .service-content {
   color: white;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.service-card:hover .service-content {
   opacity: 1;
+  /* Always visible */
   transform: translateY(0);
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  /* Add shadow for better readability on light backgrounds */
 }
 
 .service-content h3 {
@@ -523,6 +589,172 @@ h3 {
   line-height: 1.8;
   margin-bottom: 20px;
   font-size: 1.05rem;
+}
+
+/* Doctors Grid - Side by Side Layout */
+.doctors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.doctor-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-image {
+  margin-bottom: 25px;
+}
+
+.doctor-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 3px solid rgba(29, 175, 237, 0.2);
+}
+
+.doctor-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.doctor-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  color: var(--text-main);
+}
+
+.doctor-info p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Redesigned Doctors Section - Cleaner Layout */
+.doctors-grid-redesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.doctor-card-redesign {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctor-card-redesign:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-photo-large {
+  margin: 0 auto 30px;
+  width: 280px;
+  height: 280px;
+}
+
+.doctor-photo-large img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 5px solid rgba(29, 175, 237, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctor-photo-large img:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 12px 40px rgba(29, 175, 237, 0.3);
+}
+
+.doctor-card-redesign h3 {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  font-family: var(--font-heading);
+}
+
+.doctor-specialty {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.doctor-bio-text {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.doctor-bio-text p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.doctor-bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive for redesigned doctors layout */
+@media(max-width: 1100px) {
+  .doctors-grid-redesign {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media(max-width: 768px) {
+  .doctor-card-redesign {
+    padding: 40px 30px;
+  }
+
+  .doctor-photo-large {
+    width: 220px;
+    height: 220px;
+  }
+
+  .doctor-card-redesign h3 {
+    font-size: 1.75rem;
+  }
+
+  .doctor-bio-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive for doctors grid */
+@media(max-width: 900px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Map */
@@ -745,6 +977,72 @@ h3 {
 
   .top-bar {
     display: none;
+  }
+
+  /* Mobile Logo - Side by side with divider, 3x bigger and centered */
+  .nav-container {
+    flex-direction: column !important;
+    gap: 12px !important;
+    position: relative;
+  }
+
+  .logo {
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .logo>div:nth-child(2) {
+    display: block !important;
+    /* Show the divider on mobile */
+    height: 45px !important;
+    width: 2px !important;
+    background-color: #ccc !important;
+  }
+
+  .logo-text {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+  }
+
+  .logo-sub {
+    font-size: 9px !important;
+    letter-spacing: 0.8px;
+  }
+
+  .main-header {
+    padding: 15px 0;
+    position: relative;
+  }
+
+  .mobile-toggle {
+    position: absolute !important;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  /* Info Cards - Stack all 3 vertically */
+  .quick-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .info-card {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 35px 25px;
+  }
+
+  .info-card:last-child {
+    border-bottom: none;
   }
 }
 
