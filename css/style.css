@@ -440,6 +440,7 @@ h3 {
 
 /* SERVICES GRID - Mimicking Screenshot */
 .services-section {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -495,8 +496,8 @@ h3 {
 }
 
 .service-card:hover .service-overlay {
-  background: linear-gradient(135deg, rgba(29, 175, 237, 0.92) 0%, rgba(13, 155, 217, 0.88) 100%);
-  /* Blue overlay appears on hover */
+  background: linear-gradient(to bottom, rgba(29, 175, 237, 0) 0%, rgba(29, 175, 237, 0.9) 100%);
+  /* Vertical fade: clear at top, blue at bottom */
 }
 
 .service-content {

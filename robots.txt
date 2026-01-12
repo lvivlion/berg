@@ -1,4 +1,4 @@
-# Berg Dental - Pittsburgh Clear Aligner Center
+    # Berg Dental - Pittsburgh Clear Aligner Center
 # Sitemap: https://bergdentaldmd.com/sitemap.xml
 
 User-agent: *
