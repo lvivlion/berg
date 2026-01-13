@@ -156,4 +156,79 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+
+    // ========================================
+    // SCROLL ANIMATIONS
+    // ========================================
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        elements.forEach(el => observer.observe(el));
+    };
+
+    // Add animate-on-scroll class to sections
+    const sections = document.querySelectorAll('section:not(.page-hero):not(.hero), .service-card, .info-card, .team-member, .footer-col');
+    sections.forEach(section => {
+        section.classList.add('animate-on-scroll');
+    });
+
+    animateOnScroll();
+
+    // ========================================
+    // LAZY LOADING IMAGES
+    // ========================================
+    const lazyLoadImages = () => {
+        const images = document.querySelectorAll('img[data-src]');
+
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '50px 0px'
+        });
+
+        images.forEach(img => imageObserver.observe(img));
+    };
+
+    // Add loading="lazy" to all images without it
+    document.querySelectorAll('img:not([loading])').forEach(img => {
+        img.setAttribute('loading', 'lazy');
+    });
+
+    lazyLoadImages();
+
+    // ========================================
+    // SMOOTH SCROLL FOR ANCHOR LINKS
+    // ========================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });

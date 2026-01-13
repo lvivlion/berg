@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Berg Dental | Restorative, Preventative & Cosmetic Dentistry</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description"
         content="Comprehensive dental services in Pittsburgh including restorative care, BioLase water laser, 3Shape Trios scanner, preventative care, and cosmetic dentistry. Advanced painless treatments.">
     <meta name="keywords"
@@ -59,7 +60,17 @@
                 <a href="index.html">Home</a>
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
-                <a href="our-services.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="clear-aligners.html">Clear Aligners</a>
+                        <a href="restorative.html">Restorative</a>
+                        <a href="biolase.html">BioLase Water Laser</a>
+                        <a href="3-shape-trios-scanner.html">3 Shape Trios Scanner</a>
+                        <a href="preventative.html">Preventative Care</a>
+                    </div>
+                </div>
                 <a href="insurance.html">Insurance</a>
                 <a href="contactus.html">Contact</a>
             </nav>
@@ -71,11 +82,10 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 100px 0; background-color: var(--primary-color); text-align: center;">
+    <section class="page-hero">
         <div class="container">
-            <h1 style="color: white; margin-bottom: 20px;">Our Services</h1>
-            <p style="color: white; opacity: 0.9; max-width: 600px; margin: 0 auto;">Comprehensive dental care tailored
-                to your needs.</p>
+            <h1>Our Services</h1>
+            <p>Comprehensive dental care for the whole family.</p>
         </div>
     </section>
 
@@ -84,8 +94,25 @@
         <div class="container">
             <div class="services-grid">
 
+                <!-- Clear Aligners -->
+                <a href="clear-aligners.html" class="service-card">
+                    <img src="images/clearaligner.jpg" alt="Clear Aligners">
+                    <div class="service-overlay">
+                        <div class="service-content">
+                            <h3>Clarity™ Clear Aligners</h3>
+                            <p>A discreet & effective way to straighten your smile.</p>
+                            <ul
+                                style="font-size: 0.9rem; margin-top: 10px; list-style: none; padding: 0; opacity: 0.9;">
+                                <li>• Virtually Invisible</li>
+                                <li>• Comfortable & Removable</li>
+                                <li>• Customized for You</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- Restorative -->
-                <div class="service-card">
+                <a href="restorative.html" class="service-card">
                     <img src="images/1f.png" alt="Restorative">
                     <div class="service-overlay">
                         <div class="service-content">
@@ -101,10 +128,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- BioLase Water Laser -->
-                <div class="service-card">
+                <a href="biolase.html" class="service-card">
                     <img src="images/2f.png" alt="BioLase Water Laser">
                     <div class="service-overlay">
                         <div class="service-content">
@@ -118,10 +145,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- 3 Shape Trios Scanner -->
-                <div class="service-card">
+                <a href="3-shape-trios-scanner.html" class="service-card">
                     <img src="images/3f.png" alt="3 Shape Trios Scanner">
                     <div class="service-overlay">
                         <div class="service-content">
@@ -135,10 +162,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Preventative Care -->
-                <div class="service-card">
+                <a href="preventative.html" class="service-card">
                     <img src="images/4f.png" alt="Preventative Care">
                     <div class="service-overlay">
                         <div class="service-content">
@@ -152,7 +179,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
         </div>
@@ -163,7 +190,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>BERG DENTAL</h4>
+                    <h4>Berg Dental & Pittsburgh Clear Aligner Center</h4>
                     <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
                         Pittsburgh's Clear Aligner Center and trusted family dentistry. We are committed to
                         excellence in every aspect of your dental care.
@@ -194,7 +221,10 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.
+                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.<br>
+                <span style="font-size: 0.85rem; opacity: 0.7;">Made in Pittsburgh by <a
+                        href="https://ost4p.com/website" target="_blank" style="color: var(--secondary-color);">OL
+                        Website Design Services</a></span>
             </div>
         </div>
     </footer>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance - Berg Dental | Pittsburgh Clear Aligner Center</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,17 @@
                 <a href="index.html">Home</a>
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
-                <a href="our-services.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="clear-aligners.html">Clear Aligners</a>
+                        <a href="restorative.html">Restorative</a>
+                        <a href="biolase.html">BioLase Water Laser</a>
+                        <a href="3-shape-trios-scanner.html">3 Shape Trios Scanner</a>
+                        <a href="preventative.html">Preventative Care</a>
+                    </div>
+                </div>
                 <a href="insurance.html">Insurance</a>
                 <a href="contactus.html">Contact</a>
             </nav>
@@ -60,11 +71,10 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 100px 0; background-color: var(--primary-color); text-align: center;">
+    <section class="page-hero">
         <div class="container">
-            <h1 style="color: white; margin-bottom: 20px;">Insurance Plans</h1>
-            <p style="color: white; opacity: 0.9; max-width: 600px; margin: 0 auto;">We work with many carriers to
-                maximize your benefits.</p>
+            <h1>Insurance Plans</h1>
+            <p>We work with many carriers to maximize your benefits.</p>
         </div>
     </section>
 
@@ -76,26 +86,17 @@
                 <p>We accept most major PPO plans. If your plan is not listed, please call us to verify.</p>
             </div>
 
-            <ul
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; margin-bottom: 60px;">
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">United
-                    Concordia PPO</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Metlife
-                    PPO</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">UPMC
-                    Dental Advantage</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Delta
-                    Dental PPO</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Guardian
-                    PPO</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Cigna PPO
-                </li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Aetna PPO
-                </li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">Aetna
-                    Access Dentemax Discount</li>
-                <li style="background: var(--bg-light); padding: 20px; border-radius: 8px; font-weight: 500;">UPMC For
-                    Life Medicare Advantage</li>
+            <ul class="insurance-list"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: center; margin-bottom: 60px; list-style: none;">
+                <li>United Concordia PPO</li>
+                <li>Metlife PPO</li>
+                <li>UPMC Dental Advantage</li>
+                <li>Delta Dental PPO</li>
+                <li>Guardian PPO</li>
+                <li>Cigna PPO</li>
+                <li>Aetna PPO</li>
+                <li>Aetna Access Dentemax Discount</li>
+                <li>UPMC For Life Medicare Advantage</li>
             </ul>
 
             <div
@@ -118,7 +119,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>BERG DENTAL</h4>
+                    <h4>Berg Dental & Pittsburgh Clear Aligner Center</h4>
                     <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
                         Pittsburgh's Clear Aligner Center and trusted family dentistry. We are committed to
                         excellence in every aspect of your dental care.
@@ -149,7 +150,10 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.
+                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.<br>
+                <span style="font-size: 0.85rem; opacity: 0.7;">Made in Pittsburgh by <a
+                        href="https://ost4p.com/website" target="_blank" style="color: var(--secondary-color);">OL
+                        Website Design Services</a></span>
             </div>
         </div>
     </footer>

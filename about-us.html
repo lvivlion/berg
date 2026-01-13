@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Berg Dental | Pittsburgh Clear Aligner Center</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,17 @@
                 <a href="index.html">Home</a>
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
-                <a href="our-services.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="clear-aligners.html">Clear Aligners</a>
+                        <a href="restorative.html">Restorative</a>
+                        <a href="biolase.html">BioLase Water Laser</a>
+                        <a href="3-shape-trios-scanner.html">3 Shape Trios Scanner</a>
+                        <a href="preventative.html">Preventative Care</a>
+                    </div>
+                </div>
                 <a href="insurance.html">Insurance</a>
                 <a href="contactus.html">Contact</a>
             </nav>
@@ -60,11 +71,10 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 100px 0; background-color: var(--primary-color); text-align: center;">
+    <section class="page-hero">
         <div class="container">
-            <h1 style="color: white; margin-bottom: 20px;">About Dr. Berg</h1>
-            <p style="color: white; opacity: 0.9; max-width: 600px; margin: 0 auto;">Meet the team dedicated to your
-                smile.</p>
+            <h1>About Us</h1>
+            <p>Meet the team dedicated to your dental health.</p>
         </div>
     </section>
 
@@ -73,7 +83,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="images/team_drberg.webp" alt="Dr. Berg">
+                    <img src="images/team_drberg.png" alt="Dr. Berg">
                 </div>
                 <div class="about-content">
                     <h2>Dr. Berg</h2>
@@ -107,8 +117,7 @@
             <div class="about-grid" style="direction: rtl;"> <!-- Visual Variation -->
                 <div class="about-image" style="direction: ltr;">
                     <!-- Placeholder for Dr. Becki Berg if image available, else generic or omit -->
-                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Dr. Becki Berg">
+                    <img src="images/team_becki.png" alt="Dr. Becki Berg">
                 </div>
                 <div class="about-content" style="direction: ltr;">
                     <h2>Dr. Becki Berg</h2>
@@ -140,7 +149,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>BERG DENTAL</h4>
+                    <h4>Berg Dental & Pittsburgh Clear Aligner Center</h4>
                     <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
                         Pittsburgh's Clear Aligner Center and trusted family dentistry. We are committed to
                         excellence in every aspect of your dental care.
@@ -171,7 +180,10 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.
+                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.<br>
+                <span style="font-size: 0.85rem; opacity: 0.7;">Made in Pittsburgh by <a
+                        href="https://ost4p.com/website" target="_blank" style="color: var(--secondary-color);">OL
+                        Website Design Services</a></span>
             </div>
         </div>
     </footer>

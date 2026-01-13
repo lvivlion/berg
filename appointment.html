@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berg Dental | Pittsburgh Clear Aligner Center</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,17 @@
                 <a href="index.html">Home</a>
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
-                <a href="our-services.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="clear-aligners.html">Clear Aligners</a>
+                        <a href="restorative.html">Restorative</a>
+                        <a href="biolase.html">BioLase Water Laser</a>
+                        <a href="3-shape-trios-scanner.html">3 Shape Trios Scanner</a>
+                        <a href="preventative.html">Preventative Care</a>
+                    </div>
+                </div>
                 <a href="insurance.html">Insurance</a>
                 <a href="contactus.html">Contact</a>
             </nav>
@@ -60,11 +71,10 @@
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 100px 0; background-color: var(--primary-color); text-align: center;">
+    <section class="page-hero">
         <div class="container">
-            <h1 style="color: white; margin-bottom: 20px;">New Patient Forms</h1>
-            <p style="color: white; opacity: 0.9; max-width: 600px; margin: 0 auto;">Schedule your visit with us today.
-                We look forward to seeing you!</p>
+            <h1>New Patient Forms</h1>
+            <p>Schedule your visit with us today. We look forward to seeing you!</p>
         </div>
     </section>
 
@@ -110,10 +120,14 @@
     </section>
 
     <!-- Map Section -->
-    <section class="map-section">
+    <section class="map-section" style="position: relative;">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.799786475308!2d-80.18631618460278!3d40.45100307936125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883459576962aa01%3A0x97f3b39b6c15cb84!2s450%20Home%20Dr%2C%20Pittsburgh%2C%20PA%2015275!5e0!3m2!1sen!2sus!4v1677182912345!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.199145901232!2d-80.18631618460278!3d40.45100307936125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883459576962aa01%3A0x97f3b39b6c15cb84!2s450%20Home%20Dr%2C%20Pittsburgh%2C%20PA%2015275!5e0!3m2!1sen!2sus!4v1677182912345!5m2!1sen!2sus"
             allowfullscreen="" loading="lazy"></iframe>
+        <a href="https://www.google.com/maps/dir//450+Home+Dr,+Pittsburgh,+PA+15275" target="_blank"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--primary-color); color: white; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+            <i class="fas fa-directions"></i> Get Directions
+        </a>
     </section>
 
     <!-- Footer -->
@@ -121,7 +135,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>BERG DENTAL</h4>
+                    <h4>Berg Dental & Pittsburgh Clear Aligner Center</h4>
                     <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">
                         Pittsburgh's Clear Aligner Center and trusted family dentistry. We are committed to
                         excellence in every aspect of your dental care.
@@ -152,7 +166,10 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.
+                &copy; <span id="current-year"></span> Berg Dental. All Rights Reserved.<br>
+                <span style="font-size: 0.85rem; opacity: 0.7;">Made in Pittsburgh by <a
+                        href="https://ost4p.com/website" target="_blank" style="color: var(--secondary-color);">OL
+                        Website Design Services</a></span>
             </div>
         </div>
     </footer>
