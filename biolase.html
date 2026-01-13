@@ -8,13 +8,13 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description"
         content="Experience painless dentistry with BioLase Water Laser technology at Berg Dental Pittsburgh. No shot, no drill, no fear.">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+
+
+
+
 </head>
 
 <body>
@@ -23,11 +23,12 @@
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="contacts">
-                <span class="contact-item"><i class="fas fa-phone-alt"></i> Call Now: 412.788.4545</span>
-                <span class="contact-item"><i class="fas fa-envelope"></i> kelli.bergdental@gmail.com</span>
+                <span class="contact-item"><span class="icon icon-phone"></span> Call Now: 412.788.4545</span>
+                <span class="contact-item"><span class="icon icon-envelope"></span> kelli.bergdental@gmail.com</span>
             </div>
             <div class="hours">
-                <span><i class="far fa-clock"></i> Mon: 10-6 | Tue: 9-4:30 | Wed: 7:30-2:30 | Thu: 8-4:30</span>
+                <span><span class="icon icon-clock"></span> Mon: 10-6 | Tue: 9-4:30 | Wed: 7:30-2:30 | Thu:
+                    8-4:30</span>
             </div>
         </div>
     </div>
@@ -52,8 +53,8 @@
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
                 <div class="nav-dropdown">
-                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
-                            style="font-size: 0.7rem;"></i></a>
+                    <a href="our-services.html">Services <span class="icon icon-chevron-down"
+                            style="font-size: 0.7rem;"></span></a>
                     <div class="dropdown-menu">
                         <a href="clear-aligners.html">Clear Aligners</a>
                         <a href="restorative.html">Restorative</a>
@@ -67,7 +68,7 @@
             </nav>
 
             <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
+                <span class="icon icon-bars"></span>
             </div>
         </div>
     </header>
@@ -92,9 +93,12 @@
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto;">
 
-                <div style="text-align: center; margin-bottom: 50px;">
+                <div
+                    style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-bottom: 50px;">
                     <img src="images/2f.png" alt="BioLase Water Laser"
-                        style="max-width: 400px; border-radius: 12px; box-shadow: var(--shadow-lg);">
+                        style="max-width: 350px; border-radius: 12px; box-shadow: var(--shadow-lg);">
+                    <img src="images/biolase-waterlase.png" alt="BioLase Waterlase iX Laser System"
+                        style="max-width: 350px; border-radius: 12px; box-shadow: var(--shadow-lg);">
                 </div>
 
                 <div style="margin-bottom: 40px;">
@@ -109,25 +113,25 @@
                     <ul style="list-style: none; padding: 0;">
                         <li
                             style="padding: 12px 0; border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; gap: 15px;">
-                            <i class="fas fa-check-circle"
-                                style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+                            <span class="icon icon-check-circle"
+                                style="color: var(--secondary-color); font-size: 1.2rem;"></span>
                             <span style="font-size: 1.05rem;">Virtually Painless Procedures</span>
                         </li>
                         <li
                             style="padding: 12px 0; border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; gap: 15px;">
-                            <i class="fas fa-check-circle"
-                                style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+                            <span class="icon icon-check-circle"
+                                style="color: var(--secondary-color); font-size: 1.2rem;"></span>
                             <span style="font-size: 1.05rem;">Less Swelling and Discomfort</span>
                         </li>
                         <li
                             style="padding: 12px 0; border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; gap: 15px;">
-                            <i class="fas fa-check-circle"
-                                style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+                            <span class="icon icon-check-circle"
+                                style="color: var(--secondary-color); font-size: 1.2rem;"></span>
                             <span style="font-size: 1.05rem;">Faster Healing Times</span>
                         </li>
                         <li style="padding: 12px 0; display: flex; align-items: center; gap: 15px;">
-                            <i class="fas fa-check-circle"
-                                style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+                            <span class="icon icon-check-circle"
+                                style="color: var(--secondary-color); font-size: 1.2rem;"></span>
                             <span style="font-size: 1.05rem;">Reduced Need for Anesthesia</span>
                         </li>
                     </ul>
@@ -137,6 +141,25 @@
                     <a href="appointment.html" class="btn btn-primary">Schedule Your Consultation</a>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section style="background: var(--bg-light); padding: 50px 0;">
+        <div class="container">
+            <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 30px;">Explore Our Services</h3>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                <a href="clear-aligners.html" class="btn btn-outline"
+                    style="font-size: 0.85rem; padding: 10px 16px;">Clear Aligners</a>
+                <a href="restorative.html" class="btn btn-outline"
+                    style="font-size: 0.85rem; padding: 10px 16px;">Restorative</a>
+                <a href="biolase.html" class="btn btn-outline" style="font-size: 0.85rem; padding: 10px 16px;">BioLase
+                    Laser</a>
+                <a href="3-shape-trios-scanner.html" class="btn btn-outline"
+                    style="font-size: 0.85rem; padding: 10px 16px;">Trios Scanner</a>
+                <a href="preventative.html" class="btn btn-outline"
+                    style="font-size: 0.85rem; padding: 10px 16px;">Preventative</a>
             </div>
         </div>
     </section>
@@ -165,13 +188,14 @@
                 <div class="footer-col">
                     <h4>CONTACT US</h4>
                     <ul style="list-style: none;">
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> 450 Home Dr,
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-map-marker-alt"
+                                style="color:var(--secondary-color); margin-right:10px;"></span> 450 Home Dr,
                             Pittsburgh, PA 15275</li>
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-phone"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> 412.788.4545</li>
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-envelope"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> kelli.bergdental@gmail.com
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-phone"
+                                style="color:var(--secondary-color); margin-right:10px;"></span> 412.788.4545</li>
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-envelope"
+                                style="color:var(--secondary-color); margin-right:10px;"></span>
+                            kelli.bergdental@gmail.com
                         </li>
                     </ul>
                 </div>

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance - Berg Dental | Pittsburgh Clear Aligner Center</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+
+
+
+
 </head>
 
 <body>
@@ -21,11 +21,12 @@
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="contacts">
-                <span class="contact-item"><i class="fas fa-phone-alt"></i> Call Now: 412.788.4545</span>
-                <span class="contact-item"><i class="fas fa-envelope"></i> kelli.bergdental@gmail.com</span>
+                <span class="contact-item"><span class="icon icon-phone"></span> Call Now: 412.788.4545</span>
+                <span class="contact-item"><span class="icon icon-envelope"></span> kelli.bergdental@gmail.com</span>
             </div>
             <div class="hours">
-                <span><i class="far fa-clock"></i> Mon: 10-6 | Tue: 9-4:30 | Wed: 7:30-2:30 | Thu: 8-4:30</span>
+                <span><span class="icon icon-clock"></span> Mon: 10-6 | Tue: 9-4:30 | Wed: 7:30-2:30 | Thu:
+                    8-4:30</span>
             </div>
         </div>
     </div>
@@ -50,8 +51,8 @@
                 <a href="appointment.html">Appointment</a>
                 <a href="about-us.html">About Us</a>
                 <div class="nav-dropdown">
-                    <a href="our-services.html">Services <i class="fas fa-chevron-down"
-                            style="font-size: 0.7rem;"></i></a>
+                    <a href="our-services.html">Services <span class="icon icon-chevron-down"
+                            style="font-size: 0.7rem;"></span></a>
                     <div class="dropdown-menu">
                         <a href="clear-aligners.html">Clear Aligners</a>
                         <a href="restorative.html">Restorative</a>
@@ -65,7 +66,7 @@
             </nav>
 
             <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
+                <span class="icon icon-bars"></span>
             </div>
         </div>
     </header>
@@ -86,18 +87,63 @@
                 <p>We accept most major PPO plans. If your plan is not listed, please call us to verify.</p>
             </div>
 
-            <ul class="insurance-list"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: center; margin-bottom: 60px; list-style: none;">
-                <li>United Concordia PPO</li>
-                <li>Metlife PPO</li>
-                <li>UPMC Dental Advantage</li>
-                <li>Delta Dental PPO</li>
-                <li>Guardian PPO</li>
-                <li>Cigna PPO</li>
-                <li>Aetna PPO</li>
-                <li>Aetna Access Dentemax Discount</li>
-                <li>UPMC For Life Medicare Advantage</li>
-            </ul>
+            <div class="insurance-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">United Concordia PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Metlife PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">UPMC Dental Advantage</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Delta Dental PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Guardian PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Cigna PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Aetna PPO</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">Aetna Access Dentemax</span>
+                </div>
+                <div class="insurance-card"
+                    style="background: white; border: 1px solid rgba(29, 175, 237, 0.15); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; gap: 15px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                    <span class="icon icon-check-circle"
+                        style="font-size: 1.5rem; color: var(--primary-color); flex-shrink: 0;"></span>
+                    <span style="font-weight: 500; color: var(--text-main);">UPMC For Life Medicare</span>
+                </div>
+            </div>
 
             <div
                 style="background-color: #f0f7fb; padding: 40px; border-radius: 12px; border-left: 5px solid var(--secondary-color);">
@@ -138,13 +184,14 @@
                 <div class="footer-col">
                     <h4>CONTACT US</h4>
                     <ul style="list-style: none;">
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> 450 Home Dr,
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-map-marker-alt"
+                                style="color:var(--secondary-color); margin-right:10px;"></span> 450 Home Dr,
                             Pittsburgh, PA 15275</li>
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-phone"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> 412.788.4545</li>
-                        <li style="color: rgba(255,255,255,0.7);"><i class="fas fa-envelope"
-                                style="color:var(--secondary-color); margin-right:10px;"></i> kelli.bergdental@gmail.com
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-phone"
+                                style="color:var(--secondary-color); margin-right:10px;"></span> 412.788.4545</li>
+                        <li style="color: rgba(255,255,255,0.7);"><span class="icon icon-envelope"
+                                style="color:var(--secondary-color); margin-right:10px;"></span>
+                            kelli.bergdental@gmail.com
                         </li>
                     </ul>
                 </div>

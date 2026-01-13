@@ -50,6 +50,31 @@ html {
   /* Ensure consistent rem sizing */
 }
 
+/* Custom Scrollbar - Match site colors */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--bg-light);
+}
+
 /* Prevent font layout shift */
 body {
   font-family: var(--font-body);
@@ -135,6 +160,12 @@ h3 {
   width: 90%;
   max-width: 1100px;
   /* Optimal reading width for better readability */
+  margin: 0 auto;
+}
+
+/* Narrower content wrapper for text-heavy sections */
+.content-narrow {
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -621,7 +652,8 @@ h3 {
   border-right: none;
 }
 
-.info-card i {
+.info-card i,
+.info-card .icon {
   font-size: 2.8rem;
   color: var(--primary-color);
   margin-bottom: 20px;
@@ -633,7 +665,8 @@ h3 {
   transform: translateY(-4px);
 }
 
-.info-card:hover i {
+.info-card:hover i,
+.info-card:hover .icon {
   transform: scale(1.08);
 }
 
@@ -1235,6 +1268,18 @@ h3 {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Insurance Card Hover Effect */
+.insurance-card:hover {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(29, 175, 237, 0.25) !important;
+}
+
+.insurance-card:hover span {
+  color: white !important;
+}
+
 /* Responsive */
 @media(max-width: 900px) {
   .services-grid {
@@ -1250,7 +1295,7 @@ h3 {
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -1486,7 +1531,7 @@ h3 {
   /* Mobile Header Layout */
   .nav-container {
     flex-direction: row !important;
-    justify-content: flex-start !important;
+    justify-content: space-between !important;
     align-items: center !important;
     gap: 10px !important;
     position: relative;
@@ -1519,17 +1564,15 @@ h3 {
     letter-spacing: 0.8px;
   }
 
-  /* Centered Hamburger Icon (User preference from previous steps) */
+  /* Hamburger Icon - Push to far right edge */
   .mobile-toggle {
-    position: absolute !important;
-    right: 50%;
-    transform: translateX(calc(50vw - 30px));
-    /* Position relative to center but pushing right */
+    position: static;
     flex-shrink: 0;
     font-size: 1.5rem;
     color: var(--primary-color);
     padding: 8px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: -8px;
   }
 
   .container {
@@ -1666,7 +1709,8 @@ h3 {
   color: white;
 }
 
-.footer-col i {
+.footer-col i,
+.footer-col .icon {
   color: white !important;
 }
 

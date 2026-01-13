@@ -144,8 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileToggle.addEventListener('click', () => {
             mainNav.classList.toggle('active');
             mobileToggle.innerHTML = mainNav.classList.contains('active')
-                ? '<i class="fas fa-times"></i>'
-                : '<i class="fas fa-bars"></i>';
+                ? '<span class="icon icon-xmark"></span>'
+                : '<span class="icon icon-bars"></span>';
         });
     }
 
