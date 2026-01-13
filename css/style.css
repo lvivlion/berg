@@ -804,6 +804,12 @@ h3 {
   transition: transform 0.5s ease;
 }
 
+.object-contain {
+  object-fit: contain !important;
+  background-color: #ffffff;
+  /* White background to fill gaps */
+}
+
 .service-card:hover img {
   transform: scale(1.05);
   /* Gentle zoom on hover only */
