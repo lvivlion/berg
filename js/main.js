@@ -36,7 +36,17 @@ const headerHTML = `
             <a href="index.html">Home</a>
             <a href="appointment.html">Appointment</a>
             <a href="about-us.html">About Us</a>
-            <a href="our-services.html">Services</a>
+            <div class="nav-dropdown">
+                <a href="our-services.html">Services <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                <div class="dropdown-menu">
+                    <a href="clear-aligners.html">Clear Aligners</a>
+                    <a href="restorative.html">Restorative</a>
+                    <a href="biolase.html">BioLase Water Laser</a>
+                    <a href="3-shape-trios-scanner.html">3 Shape Trios Scanner</a>
+                    <a href="preventative.html">Preventative Care</a>
+                </div>
+            </div>
             <a href="insurance.html">Insurance</a>
             <a href="contactus.html">Contact</a>
         </nav>
@@ -138,6 +148,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 : '<i class="fas fa-bars"></i>';
         });
     }
+
+    // Mobile Dropdown Toggle for Services menu
+    const setupMobileDropdowns = () => {
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+        const isMobile = () => window.innerWidth <= 768;
+
+        dropdowns.forEach(dropdown => {
+            // Create arrow toggle button for mobile
+            const existingToggle = dropdown.querySelector('.dropdown-toggle');
+            if (!existingToggle) {
+                const toggleBtn = document.createElement('span');
+                toggleBtn.className = 'dropdown-toggle';
+                toggleBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+
+                // Insert after the main link
+                const mainLink = dropdown.querySelector(':scope > a');
+                if (mainLink) {
+                    mainLink.after(toggleBtn);
+                }
+            }
+
+            // Handle arrow toggle click
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close other dropdowns
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.classList.remove('open');
+                        }
+                    });
+
+                    // Toggle this dropdown
+                    dropdown.classList.toggle('open');
+                });
+            }
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (isMobile() && !e.target.closest('.nav-dropdown')) {
+                dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+            }
+        });
+    };
+
+    setupMobileDropdowns();
 
     // Scroll Header Effect
     const header = document.querySelector('.main-header');
